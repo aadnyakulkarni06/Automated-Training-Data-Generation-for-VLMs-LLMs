@@ -1,0 +1,11 @@
+# Minimal requirements for development
+pillow
+pdf2image
+pytesseract
+opencv-python
+transformers
+torch
+pytest
+flask
+pandas
+scikit-learn

@@ -1,0 +1,22 @@
+# Virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Data files
+data/raw/
+data/processed/
+data/annotated/
+data/cleaned/
+data/verified/
+*.csv
+*.json
+
+# System files
+.DS_Store
+
+# Environment & credentials
+.env
+apikeys.txt
