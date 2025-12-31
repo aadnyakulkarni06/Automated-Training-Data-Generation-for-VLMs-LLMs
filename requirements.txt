@@ -10,3 +10,6 @@ pandas
 streamlit
 pymongo
 requests
+regex
+tqdm
+sentencepiece
