@@ -72,6 +72,12 @@ p {
     border-radius: 14px;
     padding: 1rem;
 }
+            
+.stButton > button:first-child {
+    border-color: #0046FF;
+    background-color: #0046FF; 
+}
+            
 </style>
 """, unsafe_allow_html=True)
 
@@ -96,6 +102,9 @@ st.markdown("""
 
 files = st.file_uploader("Upload a PDF document", type=["pdf"], accept_multiple_files=True)
 run_btn = st.button("Run Pipeline", type="primary", use_container_width=True)
+
+if run_btn and not files:
+    st.error("Please upload at least one PDF document to run the pipeline.")
 
 if files and run_btn:
     # Initialize timing
@@ -166,4 +175,3 @@ if files and run_btn:
                             file_name=value.split("/")[-1],
                             mime="application/json"
                         )
-    
